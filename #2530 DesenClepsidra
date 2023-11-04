@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+long long int maxi=-10000001,n,i,st,dr,j,p,c;
+float y;
+
+
+int main()
+{
+    
+    
+    cin>>n;
+    for(i=n;i>=1;i--)
+    {
+        p=i;
+       while(p<n)
+           {
+               cout<<"#";
+               p++;
+           }
+       for(j=1;j<=i*2-1;j++)
+       {
+           cout<<"*";
+       }
+       p=i;
+        while(p<n)
+           {
+               cout<<"#";
+               p++;
+           }
+       
+       cout<<"\n";
+    }
+    for(i=2;i<=n;i++)
+    {
+        p=i;
+       while(p<n)
+           {
+               cout<<"#";
+               p++;
+           }
+           
+       for(j=1;j<=i*2-1;j++)
+       {
+           cout<<"*";
+       }
+       p=i;
+       while(p<n)
+           {
+               cout<<"#";
+               p++;
+           }
+       
+       cout<<"\n";
+    }
+   
+    return 0;
+}
